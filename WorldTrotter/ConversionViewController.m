@@ -28,10 +28,13 @@
     
     BOOL rtn = YES;
     
-    NSRange existingRange = [textField.text rangeOfString:@"."];
+    NSLocale *currentLocale = [NSLocale currentLocale];
+    NSString *decimalSeperator = currentLocale.decimalSeparator;
+    
+    NSRange existingRange = [textField.text rangeOfString:decimalSeperator];
     BOOL hasExistingDecimalSeperator = (existingRange.location != NSNotFound);
     
-    NSRange newRange = [string rangeOfString:@"."];
+    NSRange newRange = [string rangeOfString:decimalSeperator];
     BOOL wantsNewDecimalSeperator = (newRange.location != NSNotFound);
     
     if(hasExistingDecimalSeperator && wantsNewDecimalSeperator) {
