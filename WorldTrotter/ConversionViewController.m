@@ -19,6 +19,11 @@
 
 @implementation ConversionViewController
 
+-(void)viewDidLoad {
+    [super viewDidLoad];
+    NSLog(@"Hi from Conversion! View all loaded.");
+}
+
 -(BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
     
     BOOL rtn = YES;

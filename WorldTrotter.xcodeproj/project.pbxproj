@@ -14,6 +14,8 @@
 		7495016B1D87180800B9F02B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7495016A1D87180800B9F02B /* Assets.xcassets */; };
 		7495016E1D87180800B9F02B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7495016C1D87180800B9F02B /* LaunchScreen.storyboard */; };
 		749501791D87180900B9F02B /* WorldTrotterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 749501781D87180900B9F02B /* WorldTrotterTests.m */; };
+		74AA037D1D8804A400EDFB54 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74AA037C1D8804A400EDFB54 /* MapKit.framework */; };
+		74AA03801D88060B00EDFB54 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74AA037F1D88060B00EDFB54 /* MapViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		749501741D87180900B9F02B /* WorldTrotterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorldTrotterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		749501781D87180900B9F02B /* WorldTrotterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WorldTrotterTests.m; sourceTree = "<group>"; };
 		7495017A1D87180900B9F02B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74AA037C1D8804A400EDFB54 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		74AA037E1D88060B00EDFB54 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		74AA037F1D88060B00EDFB54 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74AA037D1D8804A400EDFB54 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +72,7 @@
 				7495015D1D87180800B9F02B /* WorldTrotter */,
 				749501771D87180900B9F02B /* WorldTrotterTests */,
 				7495015C1D87180800B9F02B /* Products */,
+				74AA037B1D8804A400EDFB54 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +97,8 @@
 				7495016C1D87180800B9F02B /* LaunchScreen.storyboard */,
 				7495016F1D87180800B9F02B /* Info.plist */,
 				7495015E1D87180800B9F02B /* Supporting Files */,
+				74AA037E1D88060B00EDFB54 /* MapViewController.h */,
+				74AA037F1D88060B00EDFB54 /* MapViewController.m */,
 			);
 			path = WorldTrotter;
 			sourceTree = "<group>";
@@ -109,6 +118,14 @@
 				7495017A1D87180900B9F02B /* Info.plist */,
 			);
 			path = WorldTrotterTests;
+			sourceTree = "<group>";
+		};
+		74AA037B1D8804A400EDFB54 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				74AA037C1D8804A400EDFB54 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,6 +233,7 @@
 				749501661D87180800B9F02B /* ConversionViewController.m in Sources */,
 				749501631D87180800B9F02B /* AppDelegate.m in Sources */,
 				749501601D87180800B9F02B /* main.m in Sources */,
+				74AA03801D88060B00EDFB54 /* MapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
