@@ -21,7 +21,7 @@
     self.mapView = [MKMapView new];
     self.view = self.mapView;
     
-    NSArray *segItems = @[@"Standard", @"Hybrid",@"Satellite"];
+    NSArray *segItems = @[NSLocalizedString(@"Standard", @"Standard map view"), NSLocalizedString(@"Hybrid", @"Hybrid map view"), NSLocalizedString(@"Satellite", @"Satellie map view")];
     
     UISegmentedControl *segControl = [[UISegmentedControl alloc] initWithItems:segItems];
     segControl.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:0.5];
