@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ConversionViewController.swift
 //  WorldTrotter
 //
 //  Created by Princess Sampson on 9/12/16.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ConversionViewController : UIViewController
 
 
 @end
